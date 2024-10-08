@@ -1,4 +1,4 @@
-package com.example.myapp
+package com.example.myapp.activities
 
 import android.Manifest
 import android.app.NotificationChannel
@@ -13,6 +13,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.view.GravityCompat
+import com.example.myapp.R
 import com.example.myapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
