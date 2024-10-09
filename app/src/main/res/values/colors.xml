@@ -4,5 +4,6 @@
     <color name="white">#FFFFFF</color>
     <color name="brown">#4D1F1F</color>
     <color name="green">#94AD39</color>
+    <color name="greener">#303810</color>
     <color name="pink">#EDE1E1</color>
 </resources>

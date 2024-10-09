@@ -44,4 +44,47 @@
             android:background="@drawable/img" />
     </com.google.android.material.card.MaterialCardView>
 
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/care"
+        android:textSize="30sp"
+        android:textColor="@color/greener"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/leaf_ic"
+    android:layout_marginEnd="8dp" >
+
+</ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_every_tuesday"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/greener"
+            >
+
+        </TextView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,4 +2,6 @@
     <string name="app_name">My App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="care">Care</string>
+    <string name="water_every_tuesday">Water every Tuesday</string>
 </resources>
