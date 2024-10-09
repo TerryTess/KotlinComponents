@@ -13,6 +13,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.view.GravityCompat
+import androidx.navigation.findNavController
 import com.example.myapp.R
 import com.example.myapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
@@ -38,22 +39,6 @@ class MainActivity : AppCompatActivity() {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
 
-        // Set up click listener for the navigation items
-        /*binding.navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle navigation view item clicks here
-            when (menuItem.itemId) {
-                // Example case for a menu item
-                R.id.nav_item1 -> {
-                    // Handle navigation item 1 click
-                }
-                R.id.nav_item2 -> {
-                    // Handle navigation item 2 click
-                }
-                // Add more cases as needed for your navigation items
-            }
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-            true
-        }*/
 
         binding.notify.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -69,6 +54,9 @@ class MainActivity : AppCompatActivity() {
             } else {
                 showNotification(this)
             }
+        }
+        binding.frag1.setOnClickListener {
+            findNavController(R.id.nav_host_fragment).navigate(R.id.pictureInPictureFragment)
         }
     }
 

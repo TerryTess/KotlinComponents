@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
+    android:padding="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.PlantsFragment">
 
@@ -56,9 +57,34 @@
         app:layout_constraintTop_toBottomOf="@+id/card1">
     </TextView>
     <LinearLayout
+        android:id="@+id/linear1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/text2"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/note_ic"
+    android:layout_marginEnd="8dp" >
+
+</ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_every_tuesday"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/greener"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent">
 <ImageView
@@ -71,20 +97,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/water_every_tuesday"
+            android:text="@string/feed_once_monthly"
             android:textSize="20sp"
             android:textStyle="italic"
             android:textColor="@color/greener"
             >
-
         </TextView>
-
-
-
-
-
-
-    </LinearLayout>
+</LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
