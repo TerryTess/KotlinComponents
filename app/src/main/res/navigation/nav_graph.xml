@@ -14,7 +14,11 @@
         android:id="@+id/pictureInPictureFragment"
         android:name="com.example.myapp.fragments.PictureInPictureFragment"
         android:label="Picture In Picture"
-        tools:layout="@layout/fragment_picture_in_picture" />
+        tools:layout="@layout/fragment_picture_in_picture" >
+        <action
+            android:id="@+id/action_pictureInPictureFragment_to_plantsFragment"
+            app:destination="@id/plantsFragment" />
+    </fragment>
 
     <!-- Add the PlantsFragment to the navigation graph -->
     <fragment
@@ -25,7 +29,7 @@
 
     <!-- Define the navigation action from PictureInPictureFragment to PlantsFragment -->
     <action
-        android:id="@+id/action_pictureInPictureFragment_to_PlantsFragment"
-        app:destination="@id/plantsFragment" />
+        android:id="@+id/action_mainActivity_to_pictureInPictureFragment"
+        app:destination="@id/pictureInPictureFragment" />
 
 </navigation>

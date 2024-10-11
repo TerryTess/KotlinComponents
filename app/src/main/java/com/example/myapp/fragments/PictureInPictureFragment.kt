@@ -22,8 +22,7 @@ class PictureInPictureFragment : Fragment() {
 
         // Set up the button click listener
         binding.plant.setOnClickListener {
-            // Handle button click, e.g., navigate to another fragment or perform an action
-            findNavController().navigate(R.id.action_pictureInPictureFragment_to_PlantsFragment)
+            findNavController().navigate(R.id.action_pictureInPictureFragment_to_plantsFragment)
         }
 
         return binding.root
